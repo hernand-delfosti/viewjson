@@ -1,20 +1,19 @@
 .json-item {
   margin-bottom: 5px;
-}
 
+}
 .json-row {
   display: flex;
   align-items: flex-start;
   position: relative;
 }
-
 .main-object {
   padding-left: 10px;
   padding-top: 4px;
   padding-bottom: 4px;
-
 }
 
+/** style for vertical line*/
 .main-object::before {
   content: '';
   position: absolute;
@@ -24,7 +23,6 @@
   width: 1px;
   background-color: #ccc;
 }
-
 .collapse-icon {
   flex-shrink: 0;
   width: 16px;
@@ -34,20 +32,16 @@
   position: relative;
   z-index: 1;
 }
-
 .json-content {
   flex-grow: 1;
 }
-
 .json-content.collapsed {
   display: none;
 }
-
 pre {
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* Estilos para el resaltado de sintaxis */
 .string { color: #0f7c00; font-weight: 500; }
