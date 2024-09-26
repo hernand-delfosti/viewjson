@@ -1,33 +1,53 @@
 .json-item {
-    margin-bottom: 5px;
-  }
-  
-  .json-row {
-    display: flex;
-    align-items: flex-start;
-  }
-  
-  .collapse-icon {
-    flex-shrink: 0;
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-    cursor: pointer;
-  }
-  
-  .json-content {
-    flex-grow: 1;
-  }
-  
-  .json-content.collapsed {
-    display: none;
-  }
-  
-  pre {
-    margin: 0;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-  
-  /* Estilos adicionales para el resaltado de sintaxis */
-  .string { color: #0f7c00; font-weight: 500; }
+  margin-bottom: 5px;
+}
+
+.json-row {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.main-object {
+  padding-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+}
+
+.main-object::before {
+  content: '';
+  position: absolute;
+  left: 32px;
+  top: 23px;
+  bottom: 20px;
+  width: 1px;
+  background-color: #ccc;
+}
+
+.collapse-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.json-content {
+  flex-grow: 1;
+}
+
+.json-content.collapsed {
+  display: none;
+}
+
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Estilos para el resaltado de sintaxis */
+.string { color: #0f7c00; font-weight: 500; }
