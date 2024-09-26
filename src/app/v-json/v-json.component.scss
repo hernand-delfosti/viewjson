@@ -1,0 +1,33 @@
+.json-item {
+    margin-bottom: 5px;
+  }
+  
+  .json-row {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .collapse-icon {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .json-content {
+    flex-grow: 1;
+  }
+  
+  .json-content.collapsed {
+    display: none;
+  }
+  
+  pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  /* Estilos adicionales para el resaltado de sintaxis */
+  .string { color: #0f7c00; font-weight: 500; }
